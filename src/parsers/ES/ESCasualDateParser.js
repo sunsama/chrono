@@ -3,7 +3,7 @@
 
 */
 
-var moment = require('moment');
+var moment = require('moment-timezone');
 var Parser = require('../parser').Parser;
 var ParsedResult = require('../../result').ParsedResult;
 

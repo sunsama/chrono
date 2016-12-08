@@ -3,7 +3,7 @@
 
 */
 
-var moment = require('moment');
+var moment = require('moment-timezone');
 var Parser = require('../parser').Parser;
 var ParsedResult = require('../../result').ParsedResult;
 
@@ -34,7 +34,7 @@ exports.Parser = function FRCasualDateParser(){
             if(refMoment.hour() > 1) {
                 startMoment.add(1, 'day');
             }
-        } 
+        }
 
         if(lowerText.match(/hier/)) {
             startMoment.add(-1, 'day');
