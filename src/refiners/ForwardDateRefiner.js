@@ -3,7 +3,7 @@
     e.g. "March 12-13 (without year)" or "Thursday", the refiner will try to adjust the result
     into the future instead of the past.
 */
-var moment = require('moment');
+var moment = require('moment-timezone');
 var Refiner = require('./refiner').Refiner;
 
 exports.Refiner = function ForwardDateRefiner() {

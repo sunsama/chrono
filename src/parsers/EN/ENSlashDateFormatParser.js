@@ -4,7 +4,7 @@
     - 11/3/2015
     - 11/3
 */
-var moment = require('moment');
+var moment = require('moment-timezone');
 var Parser = require('../parser').Parser;
 var ParsedResult = require('../../result').ParsedResult;
 
